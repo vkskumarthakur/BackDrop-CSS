@@ -1,0 +1,33 @@
+body{
+    background-image: url(/assets/img/banner.png);
+    height:auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.backdrop-filter{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    color: white;
+    background-color:rgba(0, 0, 0, .1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    transition: .2s;
+}
+.backdrop-filter:hover{
+    backdrop-filter: blur(10px);
+    color:tomato;
+    font-size: 100px;
+    width:400px;
+    height: 400px;
+    transition-timing-function: steps(5);
+    background-color:rgba(0, 0, 0, .4);
+}
